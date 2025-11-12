@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akıllı Sağlık Asistanı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: 'hsl(210, 40%, 50%)',
+                '50': 'hsl(210, 40%, 95%)',
+                '100': 'hsl(210, 40%, 90%)',
+                '200': 'hsl(210, 40%, 80%)',
+                '300': 'hsl(210, 40%, 70%)',
+                '400': 'hsl(210, 40%, 60%)',
+                '500': 'hsl(210, 40%, 50%)',
+                '600': 'hsl(210, 40%, 40%)',
+                '700': 'hsl(210, 40%, 30%)',
+                '800': 'hsl(210, 40%, 20%)',
+                '900': 'hsl(210, 40%, 10%)',
+              },
+              secondary: '#16a34a', // green
+              accent: '#f97316', // orange
+              danger: '#dc2626', // red
+            },
+            keyframes: {
+              'pulse-red': {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(220, 38, 38, 0.7)' },
+                '50%': { transform: 'scale(1.05)', boxShadow: '0 0 0 10px rgba(220, 38, 38, 0)' },
+              },
+            },
+            animation: {
+              'pulse-red': 'pulse-red 2s infinite',
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "zustand/": "https://aistudiocdn.com/zustand@^5.0.8/",
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.8"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 dark:bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

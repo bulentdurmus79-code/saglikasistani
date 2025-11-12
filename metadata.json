@@ -1,0 +1,9 @@
+
+{
+  "name": "Akıllı Sağlık Takip Asistanı",
+  "description": "Kullanıcı, aile üyesi, doktor ve eczacıdan oluşan sağlık ekosistemini akıllıca birbirine bağlayan, proaktif, çevrimdışı çalışabilen ve son derece erişilebilir bir Progresif Web Uygulaması.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
